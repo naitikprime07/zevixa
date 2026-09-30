@@ -68,7 +68,7 @@ site
 
 1. **Build locally:**
    ```bash
-   cd d:\New-Web\fynudge\site
+   cd d:\New-Web\zevixa\site
    npm run build
    ```
 
@@ -93,12 +93,12 @@ site
 
 ---
 
-### Step 4: Migrate Old Domain (fynudge.com)
+### Step 4: Migrate Old Domain (zevixa.com)
 
-#### If you control fynudge.com DNS:
+#### If you control zevixa.com DNS:
 
 1. **Add to Cloudflare:**
-   - Add `fynudge.com` to your Cloudflare account
+   - Add `zevixa.com` to your Cloudflare account
    - Go to DNS settings
 
 2. **Create CNAME records:**
@@ -113,8 +113,8 @@ site
    ```
 
 3. **The `_redirects` file will handle:**
-   - Automatic 301 redirects from fynudge.com → zevixa.site
-   - All URLs preserved (e.g., fynudge.com/articles/post.html → zevixa.site/articles/post.html)
+   - Automatic 301 redirects from zevixa.com → zevixa.site
+   - All URLs preserved (e.g., zevixa.com/articles/post.html → zevixa.site/articles/post.html)
 
 ---
 
@@ -126,10 +126,10 @@ site
 /articles/:article  /articles/:article.html  200
 
 # Redirect old domain to new domain
-https://fynudge.com/*  https://zevixa.site/:splat  301!
-https://www.fynudge.com/*  https://zevixa.site/:splat  301!
-http://fynudge.com/*  https://zevixa.site/:splat  301!
-http://www.fynudge.com/*  https://zevixa.site/:splat  301!
+https://zevixa.com/*  https://zevixa.site/:splat  301!
+https://www.zevixa.com/*  https://zevixa.site/:splat  301!
+http://zevixa.com/*  https://zevixa.site/:splat  301!
+http://www.zevixa.com/*  https://zevixa.site/:splat  301!
 
 # Ensure www redirects to non-www
 https://www.zevixa.site/*  https://zevixa.site/:splat  301!
@@ -144,7 +144,7 @@ https://www.zevixa.site/*  https://zevixa.site/:splat  301!
 
 ## ✅ Pre-Deployment Checklist
 
-- [x] Domain migration complete (fynudge.com → zevixa.site)
+- [x] Domain migration complete (zevixa.com → zevixa.site)
 - [x] Logo updated to ZEVIXA.png
 - [x] Navigation fixed (onclick → href)
 - [x] Google Ads updated with new domain
@@ -165,9 +165,9 @@ https://www.zevixa.site/*  https://zevixa.site/:splat  301!
 5. **Expected:** Returns to homepage
 
 ### Test Old Domain Redirects:
-1. Visit: `https://fynudge.com`
+1. Visit: `https://zevixa.com`
 2. **Expected:** Redirects to `https://zevixa.site`
-3. Visit: `https://fynudge.com/articles/some-article.html`
+3. Visit: `https://zevixa.com/articles/some-article.html`
 4. **Expected:** Redirects to `https://zevixa.site/articles/some-article.html`
 
 ### Test www Redirects:
@@ -200,7 +200,7 @@ https://www.zevixa.site/*  https://zevixa.site/:splat  301!
 ### Issue: Old domain not redirecting
 
 **Solution:**
-1. Verify fynudge.com is added to Cloudflare
+1. Verify zevixa.com is added to Cloudflare
 2. Check DNS CNAME records point to zevixa.site
 3. Wait 5-10 minutes for DNS propagation
 4. Test in incognito mode

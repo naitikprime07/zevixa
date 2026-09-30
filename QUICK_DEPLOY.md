@@ -14,7 +14,7 @@ Root directory:         site
 ## Deploy Commands:
 
 ```bash
-cd d:\New-Web\fynudge\site
+cd d:\New-Web\zevixa\site
 npm run build
 # Upload dist/ folder to Cloudflare Pages
 ```
@@ -22,7 +22,7 @@ npm run build
 ## ✅ Issues Fixed:
 - ✅ Navigation works (onclick → href)
 - ✅ 338 links fixed across 50 files
-- ✅ Domain migrated (fynudge.com → zevixa.site)
+- ✅ Domain migrated (zevixa.com → zevixa.site)
 - ✅ Logo updated to ZEVIXA.png
 - ✅ Redirects configured
 
