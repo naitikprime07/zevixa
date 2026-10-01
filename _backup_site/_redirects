@@ -1,0 +1,11 @@
+# Cloudflare Pages Redirects Configuration
+# Multi-Page Application (MPA) - Static HTML Files
+
+# Redirect old domain to new domain
+https://zevixa.com/*  https://zevixa.site/:splat  301!
+https://www.zevixa.com/*  https://zevixa.site/:splat  301!
+http://zevixa.com/*  https://zevixa.site/:splat  301!
+http://www.zevixa.com/*  https://zevixa.site/:splat  301!
+
+# Ensure www redirects to non-www
+https://www.zevixa.site/*  https://zevixa.site/:splat  301!
